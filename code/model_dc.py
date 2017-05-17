@@ -246,6 +246,8 @@ def predict():
     labels_test = None
     
     # clear reslut
+    if not os.path.exists('./Data/result'):
+        os.mkdir('./Data/result')
     command = 'rm ./Data/result/*'
     os.popen(command)
 
