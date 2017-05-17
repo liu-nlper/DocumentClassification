@@ -2,7 +2,7 @@
 This code implements a sample CNN model for document classification with tensorflow.
 
 # Model Dtructure
-![model.png](http://github.com/MRliujiaxin/DocumentClassification/raw/master/model.png)
+![model.png](https://github.com/MRliujiaxin/DocumentClassification/raw/master/model.png)
 
 # Requirements
 - Python: 2.7
