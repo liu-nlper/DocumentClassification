@@ -1,7 +1,7 @@
 # Document Classification
-This code implements a sample CNN model for document classification with tensorflow.
+This code implements a simple CNN model for document classification with tensorflow.
 
-# Model Dtructure
+# Model Structure
 ![model.png](https://github.com/MRliujiaxin/DocumentClassification/raw/master/model.png)
 
 # Requirements
