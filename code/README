@@ -1,0 +1,24 @@
+按顺序执行:
+    train_w2v_model.py -> prepare_data.py -> model_dc.py
+
+
+文件说明:
+
+1. 分词、词性标注采用中科院NLPIR，处理后文件:
+    ./Data/corpus/training.seg.csv
+    ./Data/corpus/testing.seg.csv
+
+2. configuration.py
+    配置文件
+
+3. train_w2v_model.py
+    利用官方给的train, test训练词向量
+
+3. prepare_data.py
+    构建词表，词性表等
+
+4. load_data.py
+    加载数据
+
+5. model_dc.py
+    训练模型并预测
