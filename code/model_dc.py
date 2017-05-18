@@ -159,9 +159,10 @@ class DCModel(object):
     def predict(self, data_sentences, data_tags, batch_size=50):
         """
         Args:
-            data_sentences, data_tags, data_positions, data_labels: np.array
-            label_voc: dict, 类别字典
-            result_path: str, 结果存放文件路径
+            data_sentences, data_tags: np.array
+            batch_size: int
+        Return:
+            pre_labels: list
         """
         pre_labels = []
         nb_test = int(data_sentences.shape[0]/batch_size) + 1
@@ -182,11 +183,11 @@ class DCModel(object):
                  ignore_label=None, batch_size=64, simple_compute=True):
         """
         Args:
-            data_sentences, data_tags, data_positions, data_labels: np.array
+            data_sentences, data_tags, data_labels: np.array
             ignore_label: int, 负例的编号，或者None
             simple_compute: bool, 是否画出性能详细指标表格
-            label_voc: dict, 类别字典
-            result_path: str, 结果存放文件路径
+        Return:
+            p, r, f1
         """
         pre_labels = []
         nb_dev = int(len(data_labels)/batch_size) + 1
