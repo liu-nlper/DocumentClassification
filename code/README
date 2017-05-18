@@ -1,4 +1,4 @@
-下载数据到corpus目录下，并做分词和词性标注处理，再按以下顺序执行:
+下载数据到Data/corpus目录下，并做分词和词性标注处理，再按以下顺序执行:
     train_w2v_model.py -> prepare_data.py -> model_dc.py
 
 
