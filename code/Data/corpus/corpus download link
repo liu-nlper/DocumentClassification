@@ -1,1 +1,6 @@
 数据下载地址：http://competition.ai100.com.cn/html/game_det.html?id=24
+
+将分词/词性标注后的文件命名为training.seg.csv和testing.seg.csv，放置到当前目录下。
+
+处理后的文本如下所示:
+  "公司/n 是/vshi 经/p 批准/v 依法/d 从事/vi 融资/vi 性/ng 担保/vn 业务/n 的/ude1 ..."
